@@ -1,0 +1,94 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+//package Practica7;
+
+
+public class bird {
+    public String nombre;
+    public String color;
+    public String Resistencia;
+
+    public bird(String nombre,String color, String Resistencia){
+        this.nombre=nombre;
+        this.color=color;
+        this.Resistencia=Resistencia;
+    }
+    public String getnombre(){
+        return nombre;
+    }
+    public void setnombre(String nombre){
+        this.nombre = nombre;
+    }
+
+    public String getcolor(){
+        return color;
+    }
+    public void setcolor(String color){
+        this.color = color;
+    }
+
+    public String getResistencia(){
+        return Resistencia;
+    }
+    public void setResistencia(String Resistencia){
+        this.Resistencia = Resistencia;
+    }
+}
+public class Ice extends Bird
+{
+    private String poder;
+    private String figura;
+
+
+    public Ice (String color, String nombre, int resistencia,String poderes,String figura)
+    {
+        super (color, nombre, resistencia);
+        this.poderes = poderes;
+        this.figura = figura;
+    }
+    public void mostrarDatos()
+    {
+        system.out.printl("Nombre: "+gerNombre()+
+                          "\nColor: "+getColor()+
+                          "\nresistencias: "+getResistencia()+
+                          "\nPoder: "+getpoder()+
+                          "\nfiugra: "+getfigura);
+    }
+public class bubbles extends Bird {
+    private String poderes;
+    private Strind figura;
+    
+    public bubbles(String Color, String nombre, int Resistencia, String Poderes, String figura)
+	{
+        super(nombre,color,Resistencias);
+        this.poderes=poderes;
+        this.figura = figura;
+    }
+    public void mostrarBird(){
+        System.out.println("Nombre: "+getnombre()+
+                            "\nColor: "+getcolor()+
+                            "\nTamaño: "+getResistencia()+
+                            "\nPoder: "+getpoder()+
+							"\nfiugra: "+getfigura);
+    }
+public class Red extends Bird {
+    private String poderes;
+    private Strind figura;
+    
+    public Red(String Color, String nombre, int Resistencia, String Poderes, String figura)
+	{
+        super(nombre,color,Resistencias);
+        this.poderes=poderes;
+        this.figura = figura;
+    }
+    public void mostrarBird(){
+        System.out.println("Nombre: "+getnombre()+
+                            "\nColor: "+getcolor()+
+                            "\nTamaño: "+getResistencia()+
+                            "\nPoder: "+getpoder()+
+							"\nfiugra: "+getfigura);
+    }
+
+}
